@@ -1,0 +1,604 @@
+/* === CSS Reset ==================================== */
+/* ================================================== */
+/* #region */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* #endregion */
+
+/* === Variables ==================================== */
+/* ================================================== */
+/* #region */
+
+:root {
+	--color-primary-100: #66E2DC;
+	--color-primary-200: #FA7453;
+
+	--color-accent-100: #FFB964;
+
+	--color-neutral-100: #FCFAF9;
+	--color-neutral-200: #191826;
+
+	--font-size-100: 1rem;        /* 16px */
+	--font-size-200: 1.13rem;     /* 18px */
+	--font-size-300: 1.25rem;     /* 20px */
+	--font-size-400: 2rem;        /* 32px */
+	--font-size-500: 2.5rem;      /* 40px */
+	--font-size-600: 4rem;        /* 64px */
+	--font-size-700: 4.06rem;     /* 65px */
+	--font-size-800: 5.5rem;      /* 88px */
+
+	--line-height-100: 1.63rem;   /* 26px */
+	--line-height-200: 1.75rem;   /* 28px */
+	--line-height-300: 2.13rem;   /* 34px */
+	--line-height-400: 2.5rem;    /* 40px */
+	--line-height-500: 3rem;      /* 48px */
+	--line-height-600: 3.25rem;   /* 52px */
+	--line-height-700: 4rem;      /* 64px */
+	--line-height-800: 5.5rem;    /* 88px */
+
+}
+/* #endregion */
+
+/* === Global Styles ================================ */
+/* ================================================== */
+
+body {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* === Main ========================================= */
+/* ================================================== */
+/* #region */
+
+/* Header =========================================== */
+
+.header__logo {
+	margin: 2.5rem 1.5rem 4rem;
+}
+
+/* Hero Section ===================================== */
+
+.hero {
+	position: relative;
+	margin: 0 1.5rem 10.38rem;
+}
+
+.hero__image {
+	position: absolute;
+	top: -22rem;
+	right: -15rem;
+}
+
+.hero__image-pattern {
+	display: none;
+	position: absolute;
+}
+
+.hero h1 {
+	margin-bottom: 1.25rem;
+	color: var(--color-neutral-200);
+	font-size: var(--font-size-500);
+	font-weight: bold;
+	line-height: var(--line-height-500);
+}
+
+.hero__heading-break-tablet,
+.hero__paragraph-break-tablet,
+.hero__heading-break-desktop,
+.hero__paragraph-break-desktop {
+	display: none;
+}
+
+.hero p {
+	color: var(--color-neutral-200);
+	font-size: var(--font-size-100);
+	line-height: var(--line-height-100);
+}
+
+/* Product Info ==================================== */
+
+.product-info {
+	position: relative;
+	box-sizing: border-box;
+	height: 55rem;
+	border-radius: 0.75rem;
+	margin-bottom: 7.88rem;
+	background-color: var(--color-neutral-200);
+}
+
+.product-info__cellphone-image {
+	position: absolute;
+	top: -5rem;
+	left: 0;
+	right: 0;
+	width: 13.06rem;
+	height: 26.88rem;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+.product-info__background {
+	text-align: center;
+}
+
+.product-info__background * {
+	display: inline-block;
+}
+
+.product-info__background__element1 {
+	width: 4.38rem;
+	height: 8.75rem;
+	border-radius: 2.19rem;
+	background-color: var(--color-primary-100);
+}
+
+.product-info__background__element2 {
+	width: 4.38rem;
+	height: 4.38rem;
+	border-radius: 50%;
+	margin-left: 1px;
+	background-color: var(--color-neutral-100);
+}
+
+.product-info__background__element3 {
+	width: 8.75rem;
+	height: calc(4.375rem + 4px);
+	border-radius: 4.375rem 4.375rem 0 0;
+	margin-bottom: -4px;
+	background-color: var(--color-primary-100);
+}
+
+.product-info__background__element4 {
+	width: 8.75rem;
+	height: 8.75rem;
+	border-radius: 50%;
+	margin: -3px 1px 0 0;
+	background-color: var(--color-accent-100);
+}
+
+.product-info__background__element5 {
+	width: 8.75rem;
+	height: 8.75rem;
+	border-radius: 0 0 0 4.375rem;
+	background-color: var(--color-primary-100);
+}
+
+.product-info__background__element6 {
+	position: relative;
+	box-sizing: border-box;
+	width: 8.75rem;
+	height: 8.75rem;
+	border: 2px solid var(--color-neutral-100);
+	border-radius: 50%;
+}
+
+.product-info__background__element7 {
+	position: absolute;
+	bottom: 0%;
+	left: 25%;
+	box-sizing: border-box;
+	width: 4.38rem;
+	height: 4.38rem;
+	border: 2px solid var(--color-neutral-100);
+	border-radius: 50%;
+}
+
+.product-info__background__element8 {
+	width: 8.75rem;
+	height: 8.75rem;
+}
+
+.product-info__download-card {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -4.5rem;
+	box-sizing: border-box;
+	max-width: 23.45rem;
+	padding: 3rem 2.25rem;
+	border-radius: 0.75rem;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--color-primary-200);
+	z-index: 1;
+}
+
+.product-info__download-card h2 {
+	margin-bottom: 0.75rem;
+	color: var(--color-neutral-100);
+	font-size: var(--font-size-400);
+	font-weight: bold;
+	line-height: var(--line-height-400);
+}
+
+.product-info__download-card__info {
+	margin-bottom: 2.25rem;
+	color: var(--color-neutral-100);
+	font-size: var(--font-size-200);
+	line-height: var(--line-height-200);
+}
+
+.product-info__download-card__price {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2rem;
+	color: var(--color-neutral-100);
+	font-size: var(--font-size-700);
+	font-weight: bold;
+}
+
+.product-info__download-card__price span {
+	margin-left: 1rem;
+	font-size: var(--font-size-300);
+	font-weight: 400;
+	line-height: var(--line-height-300);
+}
+
+.product-info__download-card__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+	height: 3.81rem;
+	border: none;
+	border-radius: 0.8rem;
+	margin-bottom: 1rem;
+	background-color: var(--color-neutral-200);
+	text-align: center;
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+.product-info__download-card__button img {
+	width: 1.07rem;
+	height: 1.25rem;
+	margin-right: 0.49rem;
+}
+
+.product-info__download-card__button p {
+	color: var(--color-neutral-100);
+	font-size: var(--font-size-200);
+	font-weight: bold;
+}
+
+#product-info__download-card__button__android {
+	margin-bottom: 0;
+	background-color: var(--color-neutral-100);
+}
+
+#product-info__download-card__button__android p {
+	color: var(--color-neutral-200);
+}
+
+#product-info__download-card__button__apple:hover {
+	background-color: var(--color-primary-100);
+}
+
+#product-info__download-card__button__android:hover {
+	background-color: var(--color-accent-100);
+}
+
+/* #endregion */
+
+
+/* === Footer ======================================= */
+/* ================================================== */
+/* #region */
+
+footer {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 5rem;
+}
+
+.footer__logo {
+	margin-bottom: 2rem;
+}
+
+footer p {
+	margin-bottom: 3rem;
+	font-size: var(--font-size-100);
+	line-height: var(--line-height-100);
+}
+
+#footer__email {
+	color: var(--color-neutral-200);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.footer__links a {
+	text-decoration: none;
+}
+
+.footer__links a:nth-of-type(2) {
+	margin-left: 1.25rem;
+	margin-right: 1.25rem;
+}
+
+.footer__links__icon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.footer__links__icon:hover {
+	filter: invert(74%) sepia(41%) saturate(6454%) hue-rotate(327deg) brightness(101%) contrast(96%);
+}
+
+.footer__breaker {
+	display: none;
+}
+/* #endregion */
+
+/* === Media Queries ================================ */
+/* ================================================== */
+/* #region */
+
+@media only screen and (min-width: 500px) {
+
+	.hero__heading-break-tablet,
+	.hero__paragraph-break-tablet {
+		display: block;
+	}
+
+	.footer__breaker {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+
+	.hero__image {
+		top: -25rem;
+		right: auto;
+		left: -25rem;
+	}
+	.product-info__cellphone-image {
+		left: 4rem;
+		right: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.product-info__download-card {
+		left: auto;
+		right: 3.63rem;
+		max-width: 24.94rem;
+		padding: 3rem 3.2rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: 710px) {
+
+	.header__logo {
+		margin: 3.88rem 2.62rem 5.94rem;
+	}
+
+	.hero {
+		margin: 0 2.44rem 0;
+	}
+
+	.hero h1 {
+		margin-bottom: 1.75rem;
+		font-size: var(--font-size-600);
+		line-height: var(--line-height-700);
+	}
+
+	.hero p {
+		font-size: var(--font-size-200);
+		line-height: var(--line-height-200);
+	}
+
+	.hero__image-pattern {
+		display: block;
+		top: -14rem;
+		right: -4.5rem;
+		width: 16.69rem;
+		height: 25rem;
+	}
+
+	.product-info {
+		height: 37.5rem;
+		margin: 15.5rem 2.25rem 11.5rem;
+	}
+
+	.product-info__cellphone-image {
+		top: -9rem;
+		width: 16.89rem;
+		height: 34.75rem;
+	}
+
+	.product-info__download-card {
+		bottom: -6.5rem;
+		max-width: 24.94rem;
+	}
+
+	footer {
+		margin-left: 2.25rem;
+		margin-right: 2.25rem;
+	}
+	
+	.footer__logo {
+		margin-bottom: 2rem;
+	}
+
+	.footer__container-tablet {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	footer p {
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 1050px) {
+	.header__logo {
+		margin: 3.88rem 7rem 6.94rem;
+	}
+
+	.hero {
+		margin: 0 7rem 0;
+	}
+
+	.hero__image-pattern {
+		top: -15rem;
+		right: -7rem;
+	}
+
+	.product-info {
+		margin: 15.5rem 7rem 11.5rem;
+	}
+
+	footer {
+		margin-left: 7rem;
+		margin-right: 7rem;
+	}
+	
+	.footer__logo {
+		float: left;
+		margin-right: 12%;
+	}
+
+	footer p {
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 1370px) {
+
+	.header__logo {
+		margin: 3.88rem 10.31rem 7.94rem;
+	}
+
+	.hero {
+		margin: 0 10.31rem 0;
+	}
+
+	.hero__heading-break-tablet,
+	.hero__paragraph-break-tablet {
+		display: none;
+	}
+
+	.hero__heading-break-desktop,
+	.hero__paragraph-break-desktop {
+		display: block;
+	}
+
+	.hero h1 {
+		margin-bottom: 2.5rem;
+		font-size: var(--font-size-800);
+		line-height: var(--line-height-800);
+	}
+
+	.hero p {
+		font-size: var(--font-size-300);
+		line-height: var(--line-height-300);
+	}
+
+	.hero__image {
+		top: -29rem;
+		left: -26rem;
+	}
+
+	.hero__image-pattern {
+		top: -16.5rem;
+		right: -10rem;
+		width: 19.5rem;
+		height: 29.25rem;
+	}
+
+	.product-info {
+		margin: 20rem 10.31rem 12.63rem;
+	}
+
+	.product-info__background {
+		margin-left: -8.5rem;
+		text-align: none;
+	}
+
+	.product-info__cellphone-image {
+		top: -13.5rem;
+		left: 6.38rem;
+		width: 19.5rem;
+		height: 40.13rem;
+	}
+
+	.product-info__download-card {
+		right: 6.38rem;
+		max-width: 27.88rem;
+		bottom: -7.5rem;
+	}
+
+	.product-info__download-card h2 {
+		margin-bottom: 1.38rem;
+		font-size: var(--font-size-500);
+	}
+	
+	.product-info__download-card__info {
+		margin-bottom: 2.44rem;
+		font-size: var(--font-size-300);
+		line-height: var(--line-height-300);
+	}
+	
+	.product-info__download-card__price span {
+		margin-left: 1rem;
+		font-size: var(--font-size-300);
+		font-weight: 400;
+		line-height: var(--line-height-300);
+	}
+
+	footer {
+		margin-left: 10.31rem;
+		margin-right: 10.31rem;
+	}
+}
+
+/* #endregion */

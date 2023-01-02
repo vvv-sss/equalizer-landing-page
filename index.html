@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equalizer landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header >
+      <img 
+      src="./assets/logo.svg" 
+      alt="Equalizer logo"
+      class="header__logo">
+    </header>
+    <main>
+      <section class="hero">
+        <picture>
+          <source media="(min-width: 1370px)" srcset="assets/bg-main-desktop.png">
+          <source media="(min-width: 600px)" srcset="assets/bg-main-tablet.png">
+          <img src="./assets/bg-main-mobile.png" class="hero__image" alt="">
+        </picture>
+        <img
+          src="./assets/bg-pattern-1.svg"
+          class="hero__image-pattern"
+          alt="">
+        </img>
+        <h1>We make your<br class="hero__heading-break-tablet"> music<br class="hero__heading-break-desktop"> sound<br class="hero__heading-break-tablet"> extraordinary.</h1>
+        <p>A system audio equalizer specifically designed for Android and<br class="hero__paragraph-break-tablet"> iOS. Freely tune the way your<br class="hero__paragraph-break-desktop"> music sounds with a professional<br class="hero__paragraph-break-tablet"> grade parametric EQ & volume mixer. Control bass, mids,<br class="hero__paragraph-break-tablet"><br class="hero__paragraph-break-desktop"> treble, gain control, reverb, and more!</p>
+      </section>
+      <section class="product-info">
+        <img 
+        src="./assets/illustration-app.png" 
+        alt="Cellphone with equalizer on the screen"
+        class="product-info__cellphone-image">
+        <div class="product-info__background">
+          <div class="product-info__background__element1"></div><div class="product-info__background__element2"></div>
+          <div class="product-info__background__element3"></div><br>
+          <div class="product-info__background__element4"></div>
+          <div class="product-info__background__element5"></div><br>
+          <div class="product-info__background__element6">
+            <div class="product-info__background__element7"></div>
+          </div>
+          <div class="product-info__background__element8"></div>
+        </div>
+        <div class="product-info__download-card">
+          <h2>Premium EQ</h2>
+          <p class="product-info__download-card__info">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take your listening experience to a whole new level and access all our incredible features!</p>
+          <p class="product-info__download-card__price">$4<span>/ month</span></p>
+          <button 
+          type="button" 
+          class="product-info__download-card__button apple"
+          id="product-info__download-card__button__apple">
+            <img src="./assets/icon-apple.svg" alt="Apple logo">
+            <p>iOS Download</p>
+          </button>
+          <button 
+          type="button" 
+          class="product-info__download-card__button"
+          id="product-info__download-card__button__android">
+            <img src="./assets/icon-android.svg" alt="Android logo">
+            <p>Android Download</p>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img 
+      src="./assets/logo.svg" 
+      alt="Equalizer logo"
+      class="footer__logo">
+      <div class="footer__container-tablet">
+        <p>All rights reserved © Equalizer 2021<br class="footer__breaker">
+          Have any problems? Contact us via social media or<br class="footer__breaker"> email us at <a href="#" terget="_blank" id="footer__email">equalizer@example.com</a></p>
+        <div class="footer__links">
+          <a href="#" target="_blank">
+            <img 
+          src="./assets/icon-facebook.svg" 
+          alt="Facebook logo"
+          class="footer__links__icon">
+          </a>
+          <a href="#" target="_blank">
+            <img 
+          src="./assets/icon-instagram.svg" 
+          alt="Instagram logo"
+          class="footer__links__icon">
+          </a>
+          <a href="#" target="_blank">
+            <img 
+          src="./assets/icon-twitter.svg" 
+          alt="Twitter logo"
+          class="footer__links__icon">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
