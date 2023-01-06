@@ -141,6 +141,7 @@ body {
 
 .product-info {
 	position: relative;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 55rem;
 	border-radius: 0.75rem;
@@ -208,6 +209,7 @@ body {
 
 .product-info__background__element6 {
 	position: relative;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 8.75rem;
 	height: 8.75rem;
@@ -219,6 +221,7 @@ body {
 	position: absolute;
 	bottom: 0%;
 	left: 25%;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 4.38rem;
 	height: 4.38rem;
@@ -236,6 +239,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: -4.5rem;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	max-width: 23.45rem;
 	padding: 3rem 2.25rem;
@@ -263,6 +267,8 @@ body {
 
 .product-info__download-card__price {
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin-bottom: 2rem;
 	color: var(--color-neutral-100);
@@ -278,9 +284,16 @@ body {
 }
 
 .product-info__download-card__button {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	height: 3.81rem;
@@ -290,6 +303,8 @@ body {
 	background-color: var(--color-neutral-200);
 	text-align: center;
 	cursor: pointer;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
 	transition: 0.1s;
 }
 
@@ -366,12 +381,14 @@ footer p {
 }
 
 .footer__links__icon:hover {
+	-webkit-filter: invert(74%) sepia(41%) saturate(6454%) hue-rotate(327deg) brightness(101%) contrast(96%);
 	filter: invert(74%) sepia(41%) saturate(6454%) hue-rotate(327deg) brightness(101%) contrast(96%);
 }
 
 .footer__breaker {
 	display: none;
 }
+
 /* #endregion */
 
 /* === Media Queries ================================ */
@@ -469,8 +486,14 @@ footer p {
 	}
 
 	.footer__container-tablet {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
